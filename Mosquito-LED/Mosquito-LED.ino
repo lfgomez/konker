@@ -41,7 +41,6 @@ void setup_wifi() {
   // Aguardando a conexao
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    count ++;
     Serial.print(".");
   }
   //Conexao feita com sucesso
