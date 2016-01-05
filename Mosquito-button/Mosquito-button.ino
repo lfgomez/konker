@@ -1,4 +1,4 @@
-// Codigo do botão de uso geral em comunicacao MQTT
+// Codigo do botao de uso geral em comunicacao MQTT
 // Responsavel: Luis Fernando Gomez Gonzalez (luis.gonzalez@inmetrics.com.br)
 // Projeto Konker
 
@@ -29,6 +29,7 @@ PubSubClient client(espClient);
 char msg[50];
 int value = 0;
 int count = 0;
+
 void setup_wifi() {
 
   // Aguardando 0.01 segundo
@@ -63,7 +64,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println();
 
 }
-// Setup do Microcontrolador: Vamos configurar o acesso serial, conectar no Wifi, configurar o MQTT e o pino do botao
+// Setup do Microcontrolador: Vamos configurar o acesso serial, conectar no Wifi, configurar o MQTT e o GPIO do botao
 void setup(){
   Serial.begin(115200);
   setup_wifi();
